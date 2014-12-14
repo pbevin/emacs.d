@@ -67,3 +67,6 @@
 
 ;; no bell
 (setq ring-bell-function 'ignore)
+
+;; C-z should be undo
+(global-set-key (kbd "C-z") 'undo)
