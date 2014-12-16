@@ -70,3 +70,12 @@
 
 ;; C-z should be undo
 (global-set-key (kbd "C-z") 'undo)
+
+;; F12 toggles fullscreen mode
+(defun toggle-fullscreen ()
+  "Toggle full screen"
+  (interactive)
+  (set-frame-parameter
+     nil 'fullscreen
+     (when (not (frame-parameter nil 'fullscreen)) 'fullboth)))
+(global-set-key (kbd "<f12>") 'toggle-fullscreen)
