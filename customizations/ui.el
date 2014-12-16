@@ -79,3 +79,6 @@
      nil 'fullscreen
      (when (not (frame-parameter nil 'fullscreen)) 'fullboth)))
 (global-set-key (kbd "<f12>") 'toggle-fullscreen)
+
+;; Confirm before quit
+(setq confirm-kill-emacs 'yes-or-no-p)
