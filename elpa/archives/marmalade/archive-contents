@@ -80,6 +80,9 @@
  (wxwidgets-help .
 		 [(0 0 3)
 		  nil "Look up wxWidgets API by using local html manual." tar])
+ (wsd-mode .
+	   [(0 1 0)
+	    nil "Emacs major-mode for www.websequencediagrams.com" tar])
  (ws-trim .
 	  [(1 4)
 	   nil "Tools and minor mode to trim whitespace on text lines" single])
